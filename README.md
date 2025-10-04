@@ -25,14 +25,6 @@ The implemented API endpoints are based on the `Product` section of the provided
 
 You can run the application either locally using Go or with Docker.
 
-<img width="1037" height="242" alt="image" src="https://github.com/user-attachments/assets/effab141-00bf-4e5c-a8ca-f75cb38bee74" />
-
-<img width="827" height="268" alt="image" src="https://github.com/user-attachments/assets/696dd625-1807-4944-ab29-451669899cec" />
-
-<img width="1034" height="206" alt="image" src="https://github.com/user-attachments/assets/92cbaed5-afc6-4d9e-b2d9-3212ffdba5f5" />
-
-
-
 
 ### Running with Go
 
@@ -41,6 +33,13 @@ You can run the application either locally using Go or with Docker.
     go run main.go
     ```
     The server will start on port 8080.
+
+
+<img width="1037" height="242" alt="image" src="https://github.com/user-attachments/assets/effab141-00bf-4e5c-a8ca-f75cb38bee74" />
+
+<img width="827" height="268" alt="image" src="https://github.com/user-attachments/assets/696dd625-1807-4944-ab29-451669899cec" />
+
+<img width="1034" height="206" alt="image" src="https://github.com/user-attachments/assets/92cbaed5-afc6-4d9e-b2d9-3212ffdba5f5" />
 
 ### Running with Docker
 
@@ -54,6 +53,14 @@ You can run the application either locally using Go or with Docker.
     docker run -p 8080:8080 product-api
     ```
     The server will be accessible at `http://localhost:8080`.
+
+<img width="309" height="36" alt="image" src="https://github.com/user-attachments/assets/c54fe4fa-ac7b-4989-9630-a5fc0c3d6041" />
+
+<img width="1026" height="103" alt="image" src="https://github.com/user-attachments/assets/afaa73e7-a31a-4367-84ec-e3651621f715" />
+
+<img width="738" height="58" alt="image" src="https://github.com/user-attachments/assets/689f2ab2-d9fd-4ce4-b993-e74d551298f3" />
+
+
 
 ## API Usage Examples
 
@@ -138,5 +145,6 @@ If a product with the given ID does not exist.
 The infrastructure for deploying this application to AWS ECS can be found in the separate infrastructure repository. The deployment process is automated using Terraform.
 
 For instructions on how to deploy, please refer to the `README.md` in the infrastructure repository.
+
 
 
