@@ -1,6 +1,6 @@
 # Simple Online Store - Product API
 
-This project is an implementation of a simple Product API for an e-commerce system, as part of a university assignment. The API allows for creating and retrieving products.
+This project is an implementation of a Product API for an e-commerce system. The API allows for creating and retrieving products.
 
 ## Project Structure
 
@@ -138,4 +138,5 @@ If a product with the given ID does not exist.
 The infrastructure for deploying this application to AWS ECS can be found in the separate infrastructure repository. The deployment process is automated using Terraform.
 
 For instructions on how to deploy, please refer to the `README.md` in the infrastructure repository.
+
 
