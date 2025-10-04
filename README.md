@@ -25,10 +25,19 @@ The implemented API endpoints are based on the `Product` section of the provided
 
 You can run the application either locally using Go or with Docker.
 
+<img width="1037" height="242" alt="image" src="https://github.com/user-attachments/assets/effab141-00bf-4e5c-a8ca-f75cb38bee74" />
+
+<img width="827" height="268" alt="image" src="https://github.com/user-attachments/assets/696dd625-1807-4944-ab29-451669899cec" />
+
+<img width="1034" height="206" alt="image" src="https://github.com/user-attachments/assets/92cbaed5-afc6-4d9e-b2d9-3212ffdba5f5" />
+
+
+
+
 ### Running with Go
 
 1.  **Run the server:**
-    ```bash
+    ```bash     
     go run main.go
     ```
     The server will start on port 8080.
@@ -39,7 +48,7 @@ You can run the application either locally using Go or with Docker.
     ```bash
     docker build -t product-api .
     ```
-
+ 
 2.  **Run the Docker container:**
     ```bash
     docker run -p 8080:8080 product-api
@@ -129,3 +138,4 @@ If a product with the given ID does not exist.
 The infrastructure for deploying this application to AWS ECS can be found in the separate infrastructure repository. The deployment process is automated using Terraform.
 
 For instructions on how to deploy, please refer to the `README.md` in the infrastructure repository.
+
