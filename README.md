@@ -1,4 +1,4 @@
-# Simple Online Store - Product API
+# Snahil's Online Store - Product API
 
 This project is an implementation of a Product API for an e-commerce system. The API allows for creating and retrieving products.
 
@@ -11,7 +11,7 @@ This project is an implementation of a Product API for an e-commerce system. The
 
 ## Overview
 
-The server is written in Go and provides RESTful endpoints to manage products. Product data is stored in-memory.
+The server is written in Go and provides RESTful endpoints to manage products. Product data is stored in memory.
 
 ### API Endpoints
 
@@ -157,6 +157,7 @@ For instructions on how to deploy, please refer to the `README.md` in the infras
 
 
 <img width="984" height="365" alt="image" src="https://github.com/user-attachments/assets/cdfe3ae3-c139-4fd7-9ef7-33b13e1b0c18" />
+
 
 
 
