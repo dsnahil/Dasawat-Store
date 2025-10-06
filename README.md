@@ -160,5 +160,34 @@ For instructions on how to deploy, please refer to the `README.md` in the infras
 
 
 
+The load test was performed with 100 concurrent users against the live application deployed on AWS ECS. 
 
+
+
+<img width="1382" height="910" alt="image" src="https://github.com/user-attachments/assets/06dcda11-1e7e-4eb0-bbfa-3829353e72ee" />
+
+
+
+Of course. Here are those points presented in a concise and clear manner for your submission.
+
+---
+
+## Performance and Bottlenecks
+
+The single-container deployment demonstrated a **stable throughput** of approximately **33-34 requests per second**. This indicates that the **server's processing limit** is the primary **bottleneck** in this configuration, rather than client-side limitations.
+
+---
+
+## Latency Analysis
+
+With exceptionally **low response times**, the server proved to be highly efficient. In this scenario, the performance difference between Locust's `HttpUser` and `FastHttpUser` would be negligible, as the bottleneck is the server's capacity, not the client's request-generation speed.
+
+---
+
+## Data Structure Impact
+
+The use of an **in-memory map** is directly responsible for the application's **very fast read operations** (`GET` requests). However, this data structure is limited:
+
+* **Lack of Durability:** The data is **not durable**, meaning all information is permanently lost if the container restarts.
+* **Horizontal Scaling Issues:** The system **cannot be scaled horizontally**. Running multiple containers would create separate, inconsistent in-memory databases, making a shared, external database a necessity for growth.
 
