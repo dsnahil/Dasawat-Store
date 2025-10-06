@@ -146,8 +146,12 @@ The infrastructure for deploying this application to AWS ECS can be found in the
 
 For instructions on how to deploy, please refer to the `README.md` in the infrastructure repository.
 
+
+<img width="1908" height="278" alt="image" src="https://github.com/user-attachments/assets/386dbcbf-94df-4965-88be-ce4c086c780b" />
+
+
+<img width="1695" height="181" alt="image" src="https://github.com/user-attachments/assets/841cc392-d0e9-472f-8347-a3b798f54177" />
+
+
 <img width="1898" height="554" alt="image" src="https://github.com/user-attachments/assets/d9b6f862-787b-437c-a929-1b69c0655dd3" />
-
-
-
 
