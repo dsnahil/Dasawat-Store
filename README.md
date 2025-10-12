@@ -142,9 +142,8 @@ If a product with the given ID does not exist.
 
 ## Deployment
 
-The infrastructure for deploying this application to AWS ECS can be found in the separate infrastructure repository. The deployment process is automated using Terraform.
+The deployment process is automated using Terraform.
 
-For instructions on how to deploy, please refer to the `README.md` in the infrastructure repository.
 
 
 <img width="1908" height="278" alt="image" src="https://github.com/user-attachments/assets/386dbcbf-94df-4965-88be-ce4c086c780b" />
@@ -168,8 +167,6 @@ The load test was performed with 100 concurrent users against the live applicati
 
 
 
-Of course. Here are those points presented in a concise and clear manner for your submission.
-
 ---
 
 ## Performance and Bottlenecks
@@ -190,4 +187,5 @@ The use of an **in-memory map** is directly responsible for the application's **
 
 * **Lack of Durability:** The data is **not durable**, meaning all information is permanently lost if the container restarts.
 * **Horizontal Scaling Issues:** The system **cannot be scaled horizontally**. Running multiple containers would create separate, inconsistent in-memory databases, making a shared, external database a necessity for growth.
+
 
