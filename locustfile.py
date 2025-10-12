@@ -2,7 +2,7 @@ import random
 from locust import HttpUser, task, between
 
 class ProductUser(HttpUser):
-    # Wait 1 to 5 seconds between tasks
+    # Wait 1 to 5 seconds between tasks remove the wait time tobreak teh server
     wait_time = between(1, 5)
 
     @task(10)  # Make GET requests 10 times more likely than POST requests
@@ -23,4 +23,5 @@ class ProductUser(HttpUser):
           "weight": 200,
           "some_other_id": 300
         }
+
         self.client.post(f"/products/{product_id}/details", json=product_data)
